@@ -1,0 +1,249 @@
+.black {
+    background-color: black;
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;
+    outline: 0;
+    color: white;
+    padding-left: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+    height: 10vh;
+
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+    height: 60px;
+    border-top: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+footer p {
+    opacity: 0.6;
+    margin: 3px;
+    margin-top: 8px;
+
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link li {
+    list-style: none;
+    margin: 10px;
+    font-size: 1.2rem;
+
+
+}
+
+.nav-link a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+
+.flex-container>div {
+    /* border: 1px solid black; */
+    height: 90vh;
+
+    /* width: 30%; */
+}
+
+.all-blogs {
+    /* width: 20%; */
+    flex: 1
+        /* padding-left: 20px;
+    padding-right: 0px; */
+}
+
+
+
+.insert-input {
+    /* width: 15%; */
+    flex: 0.8;
+}
+
+.all-blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-blog-container>* {
+
+    width: 90%;
+}
+
+.all-blog-container>form {
+    display: flex;
+}
+
+.all-blog-container>form>input {
+    width: 100%;
+    padding: 10px;
+    border-right: 0;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: 0;
+    font-size: large;
+
+}
+
+.all-blog-container>h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px
+}
+
+.all-blog-container>form>button {
+
+    padding: 10px;
+    border-left: 0;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.all-blog-container li {
+
+    list-style: none;
+    padding: 10px;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    /* margin-bottom: 3px; */
+    border: 1px solid rgb(0, 0, 0, 0.3);
+
+}
+
+.blog-content {
+    /* width: 60%; */
+    border: 1px solid black;
+    flex: 3;
+    overflow-y: scroll;
+    padding: 15px;
+    /* display: flex; */
+}
+
+.blog-title {
+    font-size: 2.8rem;
+    /* padding-left: 20px; */
+}
+
+.blog-paragraph {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.blog-code {
+    background-color: rgb(51, 49, 57);
+    color: white;
+
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.insert-input button {
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+
+.text-paragraph {
+    width: 100%;
+    height: 80px;
+    font-size: 1.2rem;
+}
+
+.text-title {
+    width: 100%;
+    height: 30px;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+@media screen and (max-width:700px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .blog-content {
+        overflow: visible;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
