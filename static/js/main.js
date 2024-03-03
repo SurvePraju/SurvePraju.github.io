@@ -1,8 +1,10 @@
-
+function openResume() {
+    window.open('static/files/PrajwalsResume.pdf', '_blank');
+}
 
 function animateDesignation() {
     const designation = document.querySelector(".designation");
-    const titles = ["Python Developer", "Full-Stack Developer"];
+    const titles = ["Software Engineer", "Python Developer", "Full-Stack Developer"];
     let index = 0;
 
     function typeEffect(title, index, callback) {

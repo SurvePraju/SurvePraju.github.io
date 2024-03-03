@@ -7,43 +7,52 @@
     <title>Prajwal Surve</title>
     <link rel="stylesheet" href="static/main.css">
     <style>
+        .centered a {
+            text-decoration: none;
+            color: white;
 
+        }
     </style>
 </head>
 
 <body>
+    <!-- Construction -->
+
+    <!--  -->
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <!-- <li>Skills</li> -->
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact-section" style="margin-right: 20px;">Contact</a></li>
         </ul>
     </nav>
     <div class="section">
         <div class="introduction">
-            <h3 class="hello">Hi, My name is</h3>
-            <h1 class="name">Prajwal Surve</h1>
-            <span class="designation">Python Developer</span>
-            <div class="buttons">
-
-                <button class="contact-me"
-                    onclick="window.location.href='static/files/PrajwalsResume.pdf'">Resume</button>
-
-                <button class="contact-me">Contact Me</button>
+            <div class="intro-content">
+                <h3 class="hello">Hi, My name is</h3>
+                <h1 class="name">Prajwal Surve</h1>
+                <span class="designation">Python Developer</span>
+                <div class="buttons">
+                    <button class="contact-me" onclick="openResume()">Resume</button>
+                    <button class="contact-me">Contact Me</button>
+                </div>
+            </div>
+            <div class="dev-section">
+                <h2>DEV</h2>
             </div>
         </div>
     </div>
 
-    <div class="section">
-        <div>
+    <div class="section" style="text-align: center; color: aqua;">
+        <div class="centered">
             <h3>Web-Pages</h3>
             <p><a href="./bootstrap/bootstrap-components.html">Adopt-a-Dog-Bootstrap</a></p>
             <p><a href="./Blog/index.html">Blog-Template-design</a></p>
             <p><a href="./diceproject/dice.html">DiceGame-PvC</a></p>
         </div>
-        <div>
+        <div class="centered">
             <h3>Hosted Web Applications</h3>
             <p><a href="https://quickstart-pzjr.onrender.com">Blog Website</a></p>
             <p><a href="https://withdjmoviereviews.onrender.com">Movie Review Application</a></p>
@@ -51,7 +60,28 @@
     </div>
 
     <div class="section" id="about">
-        <h2>About Me</h2>
+        <div class="about-section">
+            <h2>About Me</h2>
+            <p>My name is <span class="highlight">Prajwal Surve</span>.
+            <p> I have graduated with degree in Bacholer of Engineering in field of Computer Engineering. I'm someone
+                who is deeply fascinated by <span class="highlight">Software
+                    Development</span>.</p>
+            <p>As a
+                <span class="highlight">Web Developer</span>, I've had the opportunity to work on a variety of projects,
+                including Movie Review
+                Application,
+                Blog Application, and RealTime Chat Application. These experiences have allowed me to develop a strong
+                understanding of
+                Web Development, as well as refine my skills in <span class="highlight">Python, JavaScript </span>and
+                <span class="highlight">Django.</span>
+            </p>
+            <p>I enjoyed <span class="highlight">Problem Solving</span> my philosophy for it is
+                that break it down until you can't anymore.</p>
+            <p>
+                Whether it's coding, designing, or problem-solving, I thrive in environments that
+                allow me to unleash my creativity and push the boundaries of what's possible.</p>
+
+        </div>
     </div>
     <div class="section" id="skills">
         <h2 class="heading-skills">Skills</h2>
@@ -61,46 +91,48 @@
 
             <div class="skill">
                 <span class="skill-element">
-                    <image src="static/logos/python.svg" width="100" height="100" />
+                    <image src="static/logos/python.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/django.svg" width="100" height="100" />
+                    <image src="static/logos/django.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/flask.svg" width="100" height="100" />
+                    <image src="static/logos/flask.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/html5.svg" width="100" height="100" />
+                    <image src="static/logos/html5.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/css.svg" width="100" height="100" />
-                </span>
-
-
-                <span class="skill-element">
-                    <image src="static/logos/bootstrap.svg" width="100" height="100" />
+                    <image src="static/logos/css.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/react.svg" width="100" height="100" />
+                    <image src="static/logos/bootstrap.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/jquery.svg" width="100" height="100" />
+                    <image src="static/logos/react.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/postman.svg" width="100" height="100" />
+                    <image src="static/logos/jquery.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/postgresql.svg" width="100" height="100" />
+                    <image src="static/logos/postman.svg" class="skill-logo" />
                 </span>
                 <span class="skill-element">
-                    <image src="static/logos/mysql.svg" width="100" height="100" />
+                    <image src="static/logos/postgresql.svg" class="skill-logo" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/mysql.svg" class="skill-logo" />
                 </span>
             </div>
         </div>
     </div>
-    <div class="centered">
-        <h1>Under Construction</h1>
+
+    <div class="section" id="contact-section">
+        <div class="contact" style="margin-top: 50px;">
+            <h2>Contact Me</h2>
+        </div>
     </div>
+
 
     <script src="static/js/main.js"></script>
     <script src="static/js/hideNavbar.js"></script>

@@ -7,9 +7,11 @@ window.addEventListener("scroll", () => {
     if (currentScroll > lastScrollTop) {
         // Scroll down
         navbar.classList.add("hidden");
+        navbar.classList.add("color");
     } else {
         // Scroll up
         navbar.classList.remove("hidden");
+        // navbar.classList.remove("color");
     }
     lastScrollTop = currentScroll;
 });

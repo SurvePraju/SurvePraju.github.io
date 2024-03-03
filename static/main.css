@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
 
+
+
+/* ubcjhbcjncklacklkl;cad;scl;'alc;'alc';ad */
+
+/* kcnkmlakdfvmlkvmlkmvlkmvkmavknfvnfdalvlfd */
 body {
     /* background-color: rgb(27, 28, 31); */
-    background-color: #000000;
+    background-color: #0e1217;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .body:hover {
     cursor: pointer;
 }
 
+.color {
+    color: #F0EDCF;
+}
+
 nav {
-    width: 99vw;
+    width: 100vw;
     height: 5vh;
     color: #F0EDCF;
     position: sticky;
@@ -20,6 +31,9 @@ nav {
     font-size: 1.5rem;
     padding: 20px 0;
     transition: top 0.4s;
+    z-index: 100;
+    backdrop-filter: blur(50px);
+
 }
 
 nav ul {
@@ -29,6 +43,7 @@ nav ul {
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-end;
+
     gap: 20px;
 }
 
@@ -38,40 +53,67 @@ nav>li {
 }
 
 nav.hidden {
-    top: -60px;
-    /* Hide the navbar by moving it up */
+    top: -15vh;
+
 }
 
-.cursor {
-    display: inline-block;
-    width: 0.4em;
-    height: 0.4em;
-    border-radius: 50%;
-    background-color: black;
-    margin-left: 2px;
-    vertical-align: middle;
-    margin-top: 0;
-    padding-top: 0;
+li>a {
+    color: #0B60B0;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
 }
+
+li>a:hover {
+
+    background-color: #40A2D8;
+    color: #1a1a1b;
+}
+
+
 
 
 .section {
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
-    padding: 30px;
+
 }
 
-#about {
-    color: aliceblue;
-    margin-top: 50px;
-}
+
 
 .introduction {
     color: #0B60B0;
-    /* padding-left: 80px; */
+    margin-left: 80px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.introduction>* {
+.dev-section {
+    writing-mode: vertical-rl;
+    margin: 0;
+    padding: 0;
+}
+
+.dev-section h2 {
+    padding: inherit;
+    margin: inherit;
+    color: #252525;
+    font-size: 18rem;
+    font-weight: bold;
+    font-family: "Micro 5", sans-serif;
+    font-style: normal;
+    line-height: 0.53;
+}
+
+.intro-content {
+    flex: 1;
+    position: relative;
+}
+
+.intro-content>* {
     margin: 0;
     padding: 0;
     /* line-heigh
@@ -98,23 +140,38 @@ section>* {
 
 .designation {
     font-size: 3rem;
-    background-color: #0B60B0;
-    color: #000000;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* background-color: #0B60B0; */
+
+
+    color: #40A2D8;
+    position: absolute;
+    z-index: 1;
+
 
 
 }
 
+.cursor {
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 50%;
+    background-color: #40A2D8;
+    margin-left: 2px;
+    vertical-align: middle;
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .introduction .buttons {
-    margin-top: 30px;
+    margin-top: 80px;
     display: flex;
     justify-content: flex-start;
     gap: 30px;
 }
 
 .contact-me {
-    background-color: #000000;
+    background-color: #1a1a1b;
     color: #F0EDCF;
     display: inline-block;
     font-size: 2rem;
@@ -126,55 +183,76 @@ section>* {
 
 .contact-me:hover {
     cursor: pointer;
+    background-color: #F0EDCF;
+    color: black;
 }
 
+/* Skills Section */
 
-.skills-section {
-    color: aliceblue;
-    position: relative;
-    overflow: hidden;
-    width: 95vw;
-    height: 100vh;
-
+#skills {
+    margin-top: 40px;
 }
-
-.skills-section>.background {
-    background-color: #253239;
-    position: absolute;
-    z-index: -1;
-    height: inherit;
-    width: 120vw;
-    transform: rotate(5deg);
-
-}
-
 
 .heading-skills {
+    color: #00abf5;
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+
+}
+
+.skills-section {
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    z-index: 1;
+}
+
+.skills-section .background {
+    background-color: #253239;
+    position: absolute;
+    height: 500px;
+    margin-top: 50px;
+    /* Adjust the positioning to cover the entire screen */
+    left: -50px;
+    /* Adjust the positioning to cover the entire screen */
+    width: calc(100% + 100px);
+    /* height: calc(100% + 100px); */
+    /* Background color with 50% opacity */
+    transform: rotate(-4deg);
+    /* Rotate the background slightly */
+    transform-origin: top left;
+    z-index: -1;
+
+}
+
+.skill {
+    margin-top: 50px;
+    position: absolute;
+    top: 20px;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .skill-element {
     display: inline-block;
-
+    position: relative;
     padding: 20px;
     box-shadow: 0 0 1px rgb(0, 0, 0, 0.7);
+    border: 1px dashed black;
     border-radius: 5px;
+    margin: auto;
+
 }
 
-a {
-    color: #F0EDCF;
-    text-decoration: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-}
+.skill-logo {
+    width: 75px;
+    height: 75px;
 
-a:hover {
-
-    background-color: #F0EDCF;
-    color: #000000;
 }
 
 
@@ -182,7 +260,7 @@ a:hover {
 
 
 
-/* Scroll Bar  */
+
 ::-webkit-scrollbar {
     background-color: aliceblue;
     width: 2px;
@@ -196,4 +274,41 @@ a:hover {
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(165, 254, 224);
+}
+
+
+
+
+
+
+
+/* About Me Section */
+#about {
+    padding-top: 30px;
+    color: #d1efff;
+    font-size: 2rem;
+}
+
+.about-section {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+
+}
+
+.about-section h2 {
+    margin: 0;
+    padding: 0;
+    color: #00abf5;
+}
+
+.about-section p {
+    font-size: 1.6rem;
+}
+
+p .highlight {
+    color: #2fa4e3;
+    font-weight: bold;
+    font-size: 1.9rem;
 }
