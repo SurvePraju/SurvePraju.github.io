@@ -5,39 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prajwal Surve</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="static/main.css">
     <style>
-        .container {
-            border-top: 1px solid black;
-            display: flex;
-            justify-content: space-around;
-        }
 
-        h3 {
-            color: aliceblue;
-        }
-
-        .centered {
-            margin-top: 40px;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-        }
-
-        h2 a {
-            text-decoration: none;
-        }
     </style>
 </head>
 
 <body>
-    <h1>Hello, I'm a Web Developer</h1>
-    <h2>
-        <a href="https://github.com/SurvePraju">Prajwal Surve</a>
-    </h2>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li>Skills</li> -->
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="section">
+        <div class="introduction">
+            <h3 class="hello">Hi, My name is</h3>
+            <h1 class="name">Prajwal Surve</h1>
+            <span class="designation">Python Developer</span>
+            <div class="buttons">
 
+                <button class="contact-me"
+                    onclick="window.location.href='static/files/PrajwalsResume.pdf'">Resume</button>
 
-    <div class="container">
+                <button class="contact-me">Contact Me</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
         <div>
             <h3>Web-Pages</h3>
             <p><a href="./bootstrap/bootstrap-components.html">Adopt-a-Dog-Bootstrap</a></p>
@@ -51,9 +50,60 @@
         </div>
     </div>
 
+    <div class="section" id="about">
+        <h2>About Me</h2>
+    </div>
+    <div class="section" id="skills">
+        <h2 class="heading-skills">Skills</h2>
+        <div class="skills-section">
+
+            <div class="background"></div>
+
+            <div class="skill">
+                <span class="skill-element">
+                    <image src="static/logos/python.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/django.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/flask.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/html5.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/css.svg" width="100" height="100" />
+                </span>
+
+
+                <span class="skill-element">
+                    <image src="static/logos/bootstrap.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/react.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/jquery.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/postman.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/postgresql.svg" width="100" height="100" />
+                </span>
+                <span class="skill-element">
+                    <image src="static/logos/mysql.svg" width="100" height="100" />
+                </span>
+            </div>
+        </div>
+    </div>
     <div class="centered">
         <h1>Under Construction</h1>
     </div>
+
+    <script src="static/js/main.js"></script>
+    <script src="static/js/hideNavbar.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body {
+    /* background-color: rgb(27, 28, 31); */
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.body:hover {
+    cursor: pointer;
+}
+
+nav {
+    width: 99vw;
+    height: 5vh;
+    color: #F0EDCF;
+    position: sticky;
+    top: 0;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    transition: top 0.4s;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav>li {
+    list-style: none;
+
+}
+
+nav.hidden {
+    top: -60px;
+    /* Hide the navbar by moving it up */
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 2px;
+    vertical-align: middle;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+.section {
+    width: 100vh;
+    height: 100vh;
+    padding: 30px;
+}
+
+#about {
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+.introduction {
+    color: #0B60B0;
+    /* padding-left: 80px; */
+}
+
+.introduction>* {
+    margin: 0;
+    padding: 0;
+    /* line-heigh
+    t: 1; */
+}
+
+section>* {
+    padding: 0;
+    margin: 0;
+}
+
+.hello {
+    font-size: 2rem;
+}
+
+.name {
+    color: #F0EDCF;
+    font-size: 6rem;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.designation {
+    font-size: 3rem;
+    background-color: #0B60B0;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+.introduction .buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.contact-me {
+    background-color: #000000;
+    color: #F0EDCF;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 5px;
+    outline: 0;
+    border: 2px solid #40A2D8;
+    padding: 10px;
+}
+
+.contact-me:hover {
+    cursor: pointer;
+}
+
+
+.skills-section {
+    color: aliceblue;
+    position: relative;
+    overflow: hidden;
+    width: 95vw;
+    height: 100vh;
+
+}
+
+.skills-section>.background {
+    background-color: #253239;
+    position: absolute;
+    z-index: -1;
+    height: inherit;
+    width: 120vw;
+    transform: rotate(5deg);
+
+}
+
+
+.heading-skills {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.skill-element {
+    display: inline-block;
+
+    padding: 20px;
+    box-shadow: 0 0 1px rgb(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+a {
+    color: #F0EDCF;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+a:hover {
+
+    background-color: #F0EDCF;
+    color: #000000;
+}
+
+
+
+
+
+
+/* Scroll Bar  */
+::-webkit-scrollbar {
+    background-color: aliceblue;
+    width: 2px;
+
+}
+
+::-webkit-scrollbar-track {
+    width: 2px;
+    background-color: rgb(27, 28, 31);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(165, 254, 224);
+}
