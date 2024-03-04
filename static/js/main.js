@@ -33,3 +33,16 @@ function animateDesignation() {
 
 // Call the function to start the animation
 animateDesignation();
+
+
+
+
+
+
+
+
+// CLose Construction Modal 
+function closeConstructionModal() {
+    const closeModal = document.querySelector(".cover");
+    closeModal.classList.add("hidden")
+}

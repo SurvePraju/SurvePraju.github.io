@@ -2,8 +2,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
 
 
+.hidden {
+    display: none;
+}
 
 /* ubcjhbcjncklacklkl;cad;scl;'alc;'alc';ad */
+.cover {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    z-index: 15;
+    /* background-color: #00abf5; */
+    backdrop-filter: blur(10px);
+}
+
+.construction {
+    color: #d1efff;
+    font-size: 3rem;
+    width: 80vw;
+    height: 90vh;
+    background-color: #191f23;
+    box-shadow: 0 0 20px black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+.construction button {
+    height: 60px;
+    /* width: 200px; */
+    background-color: inherit;
+    border: 1px solid #d1efff;
+    color: #d1efff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    margin-top: 90px;
+    font-size: 2rem;
+    justify-self: end;
+}
+
+.construction button:hover {
+    background-color: #d1efff;
+    color: #191f23;
+}
 
 /* kcnkmlakdfvmlkvmlkmvlkmvkmavknfvnfdalvlfd */
 body {
@@ -31,7 +81,7 @@ nav {
     font-size: 1.5rem;
     padding: 20px 0;
     transition: top 0.4s;
-    z-index: 100;
+    z-index: 10;
     backdrop-filter: blur(50px);
 
 }
@@ -178,7 +228,7 @@ section>* {
     border-radius: 5px;
     outline: 0;
     border: 2px solid #40A2D8;
-    padding: 10px;
+    padding: 20px;
 }
 
 .contact-me:hover {
@@ -211,7 +261,7 @@ section>* {
 }
 
 .skills-section .background {
-    background-color: #253239;
+    background-color: #191f23;
     position: absolute;
     height: 500px;
     margin-top: 50px;
@@ -311,4 +361,20 @@ p .highlight {
     color: #2fa4e3;
     font-weight: bold;
     font-size: 1.9rem;
+}
+
+
+
+
+/* Contact Section */
+
+
+
+.contact {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
 }
