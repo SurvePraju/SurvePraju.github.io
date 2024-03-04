@@ -1,3 +1,8 @@
+const yearSpan = document.querySelector("#year");
+const currentYear = new Date().getFullYear()
+yearSpan.innerHTML = currentYear;
+
+
 function openResume() {
     window.open('static/files/PrajwalsResume.pdf', '_blank');
 }
@@ -46,3 +51,5 @@ function closeConstructionModal() {
     const closeModal = document.querySelector(".cover");
     closeModal.classList.add("hide")
 }
+
+
