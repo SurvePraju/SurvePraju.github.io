@@ -1,0 +1,47 @@
+@media only screen and (max-width:580px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    .section {
+        height: 100%
+    }
+
+    #contact-section {
+        margin-bottom: 300px;
+        padding-top: 330px;
+    }
+
+    .introduction .buttons {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: space-between;
+        gap: 30px;
+    }
+
+    .buttons .contact-me {
+        width: 80%
+    }
+
+    .dev-section {
+        z-index: -10;
+        position: absolute;
+        right: 0;
+    }
+
+    .dev-section h2 {
+        color: #181818;
+    }
+
+    .skill {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skills-section .background {
+        height: 800px;
+    }
+
+}

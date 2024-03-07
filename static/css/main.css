@@ -20,8 +20,9 @@
 .construction {
     color: #d1efff;
     font-size: 3rem;
-    width: 80vw;
-    height: 90vh;
+    width: 50vw;
+    /* height: 100%; */
+    padding: 30px;
     background-color: #191f23;
     box-shadow: 0 0 20px black;
     position: absolute;
@@ -140,6 +141,7 @@ li>a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
 .dev-section {
@@ -385,6 +387,7 @@ p .highlight {
 
     /* margin-bottom: 50px; */
     height: 100%;
+    margin-bottom: 100px;
 }
 
 .contact {
@@ -437,7 +440,7 @@ p .highlight {
 
 
 footer {
-    margin-top: 100px;
+
     width: 100%;
     height: 30px;
     position: absolute;

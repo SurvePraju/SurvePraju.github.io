@@ -97,7 +97,7 @@
 </body>
 
 </html> -->
-<html>
+<!-- <html>
 
 <head>
     <style>
@@ -134,10 +134,10 @@
             z-index: 1;
             /* Ensure content is above the background */
             padding: 20px;
-        }
+        } -->
 
-        /* Style for content elements */
-        .content h1 {
+<!-- /* Style for content elements */
+        /* .content h1 {
             color: white;
         }
 
@@ -163,4 +163,65 @@
 
 </body>
 
-</html>
+</html> */ -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Stick Figure</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            /* Ensures stick figure is always at the bottom of the viewport */
+        }
+
+        .stick-figure {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            /* Adjust size as needed */
+            height: 100px;
+            /* Adjust size as needed */
+            background-color: #000;
+            border-radius: 50%;
+        }
+
+        /* Animation */
+        @keyframes moveStickFigure {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            50% {
+                transform: translateX(-45%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .stick-figure {
+            animation: moveStickFigure 3s infinite;
+            /* Adjust animation duration and iteration count as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stick-figure"></div>
+</body>
+
+</html> -->
